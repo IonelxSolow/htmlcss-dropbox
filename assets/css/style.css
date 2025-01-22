@@ -16,15 +16,28 @@
     display: flex;
    
 }
+
+:root{
+    --dro-btn-primary: #0161fe; 
+    --dro-btn-hover:#4f88e1;
+    --dro-btn-hover-secondary:#d1d1d1;
+    --dro-bg-jumbo: #b4d0e6;
+    --dro-font-btn-primary: #ffffff;
+    /* --dro-font-hover:#; */
+}
 /* #endregion /COMMON */
 /* #region HEADER */
 header{
+    background-color: white;
+    font-size: 18px;
+    box-shadow: 0 1px 10px lightgray;
     position: fixed;
     z-index: 2;
     width: 100%;
     top: 0;
     left: 0;
     justify-content: space-between;
+    /* flex-wrap: nowrap; */
     ul{
         list-style-type: none;
     }
@@ -34,6 +47,7 @@ header{
 }
 
 .left_menu, .right_menu{
+    flex-wrap: nowrap;
    align-items: center;
    gap: 2rem;
    padding: 1rem 2rem;
@@ -48,3 +62,50 @@ header{
    }
 }
 /* #endregion HEADER */
+/* #region JUMBOTRON */
+.jumbotron{
+    justify-content: center;
+    margin-top: 70px;
+    background-color: var(--dro-bg-jumbo);
+    .container_jumbo{
+        max-width: 1183px;
+        width: 80%;
+        padding: 5px 0;
+       /*  margine negativo */
+        background-color: yellow;
+        .row{
+            position: relative;
+            padding: 5px 0;
+            margin: 0 -0.3rem;
+            background-color: lightcoral;
+            .title_h1{
+                font-size: 50px;
+                padding: 5px;
+            }
+            .parag_card{
+                height: 300px;
+                width: 24%;
+            }
+            .card{
+                margin:1px;
+                background-color: lightgray;
+            }
+            .jumbo_image{
+                position: absolute;
+                right: 0;
+                bottom: -12rem;
+                height: 490px;
+                width: 75%;    
+                background-image: url(/assets/img/jumbo.png);
+                background-size: cover;
+                
+                background-repeat: no-repeat;
+               img{
+                opacity: 1;
+               }
+            }
+
+        }
+    }
+}
+/* #region JUMBOTRON */
