@@ -30,6 +30,20 @@ hr{
     color: lightgray;
     padding-top: 10rem;
 }
+
+#body_section{
+    max-width: 50%;
+    margin: auto;
+}
+.text_center{
+    text-align: center;
+    vertical-align: center;
+    padding: 1rem;
+}
+
+.col-4{
+    width:calc(100%/12*4)
+}
 /* #endregion /COMMON */
 /* #region HEADER */
 header{
@@ -143,3 +157,35 @@ header{
     }
 }
 /* #region JUMBOTRON */
+/* #region PRICE */
+
+.card_price_professional, .card_price_advanced, .card_price_enterprise{
+background-color: orange;
+margin: 10px;
+height: 10rem;
+border: 1px solid lightgray;
+h4{
+    border: 1px solid lightgray;
+}
+}
+.container_row{
+  background-color: violet;
+}
+.enterprise_section{
+width: 100%;
+margin-top: 2rem;
+border: 1px solid lightgray;
+background-color: red;
+.container_enterprise{
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid lightgray;
+    background-color: lightcoralred;
+     > p{
+        padding: 1rem 0;
+        font-weight: bold;
+    }
+}
+}
+
+/* #region endPRICE */
