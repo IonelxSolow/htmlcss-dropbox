@@ -25,6 +25,11 @@
     --dro-font-btn-primary: #ffffff;
     /* --dro-font-hover:#; */
 }
+
+hr{
+    color: lightgray;
+    padding-top: 10rem;
+}
 /* #endregion /COMMON */
 /* #region HEADER */
 header{
@@ -53,7 +58,7 @@ header{
    padding: 1rem 2rem;
    .pulsante_inizia{
     color: white;
-    background-color: blue
+    background-color: var(--dro-btn-primary)
    }
    a{
     color: black;
@@ -72,37 +77,66 @@ header{
         width: 80%;
         padding: 5px 0;
        /*  margine negativo */
-        background-color: yellow;
+        /* background-color: yellow; */
         .row{
             position: relative;
             padding: 5px 0;
             margin: 0 -0.3rem;
-            background-color: lightcoral;
+           /*  background-color: lightcoral; */
             .title_h1{
                 font-size: 50px;
                 padding: 5px;
+                padding-bottom: 2rem;
             }
             .parag_card{
-                height: 300px;
-                width: 24%;
+                height: 400px;
+                width: 25%;
+                line-height: 1.25rem;
+                .btn_prova_gratis{
+                    position: absolute;
+                    left: 0;
+                    bottom: 12rem;
+                    padding: 1rem 1rem;
+                    color: var(--dro-font-btn-primary);
+                    background-color: var(--dro-btn-primary);
+                    text-decoration: none;
+                    
+                    
+                }
+                .btn_anulla{
+                    position: absolute;
+                    bottom: 9rem;
+                    text-decoration: none;
+                    color: black;
+
+                }
+                .arrow_down{
+                    position: absolute;
+                    color: black;
+                    text-decoration: none;
+                    left: 0;
+                    bottom: 1rem;
+                    padding: 1rem;
+                    font-size: 20px;
+                }
             }
             .card{
                 margin:1px;
-                background-color: lightgray;
+                /* background-color: lightgray; */
             }
             .jumbo_image{
                 position: absolute;
                 right: 0;
-                bottom: -12rem;
+                bottom: -5.5rem;
                 height: 490px;
-                width: 75%;    
+                width: 74%;    
                 background-image: url(/assets/img/jumbo.png);
                 background-size: cover;
                 
                 background-repeat: no-repeat;
-               img{
+               /* img{
                 opacity: 1;
-               }
+               } */
             }
 
         }
