@@ -1,4 +1,50 @@
+/* #region COMMON */
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
 }
+
+.debug{
+    *{
+        border: 1px dashed;
+    }
+}
+
+.d-flex{
+    display: flex;
+   
+}
+/* #endregion /COMMON */
+/* #region HEADER */
+header{
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+    ul{
+        list-style-type: none;
+    }
+    li>a{
+        text-decoration: none;
+    }
+}
+
+.left_menu, .right_menu{
+   align-items: center;
+   gap: 2rem;
+   padding: 1rem 2rem;
+   .pulsante_inizia{
+    color: white;
+    background-color: blue
+   }
+   a{
+    color: black;
+    padding: 0.25rem 1rem;
+
+   }
+}
+/* #endregion HEADER */
