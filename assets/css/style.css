@@ -319,5 +319,50 @@ border: 1px solid lightgray; */
 
 
 /* region FOOTER */
+footer{
+    margin-top: 20rem;
+    background-color: black;
+    height:30rem;
+    justify-content: center;
+    padding: 5rem 0;
+    
+}
+.footer_container{
+    background-color: #0161fe;
+    width: 80%;
+    margin: auto;
+
+}
+.footer_row{
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  /*   background-color: red; */
+}
+.footer_card{
+    color: white;
+    h4{
+        padding: 1rem 0;
+    }
+    ul{
+        line-height: 2;
+        list-style: none;
+        li>a{
+            text-decoration: none;
+            color: white;
+        }
+    }
+}
+.mini_line{
+    margin-top: 5rem;
+    width: 5rem;
+    height: 1px;
+    background-color: white;
+}
+.linguage_footer{
+   margin-top: 3rem;
+    color: white;
+
+   
+}
 
 /* endregion FOOTER */
