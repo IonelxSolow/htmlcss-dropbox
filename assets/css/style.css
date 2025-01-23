@@ -87,8 +87,8 @@ header{
     margin-top: 70px;
     background-color: var(--dro-bg-jumbo);
     .container_jumbo{
-        max-width: 1183px;
-        width: 80%;
+        min-width: 1440px;
+        width: 70%;
         padding: 5px 0;
        /*  margine negativo */
         /* background-color: yellow; */
