@@ -63,10 +63,17 @@ label:nth-child(2) {
   font-size: 2rem;
 }
 .card {
+
   border: 1px solid lightgray;
   padding: 1rem;
   margin: 0 1rem;
-  background-color: green;
+  /* background-color: green; */
+  >img{
+    width: 100%;
+  }
+}
+.no_border{
+    border: none;
 }
 .title_section_meno_tempo {
   margin-top: 5rem;
@@ -184,26 +191,26 @@ header {
 /* #region JUMBOTRON */
 /* #region PRICE */
 
-.card_switch_tools,
+/*.card_switch_tools,
 .card_price_professional,
 .card_price_advanced,
 .card_price_enterprise,
 .card_enterprise_info {
-  background-color: orange;
+  /* background-color: orange; */
 
   /* margin: 10px; */
   /* 
 border: 1px solid lightgray; */
   /* h4{
     border-bottom: 1px solid lightgray;
-} */
-}
+} 
+}*/
 .card_price_professional, .card_switch_tools{
   flex-direction: column;
 }
 .container_row {
   flex-wrap: wrap;
-  background-color: violet;
+  /* background-color: violet; */
 }
 .card_enterprise_info {
   position: relative;
@@ -233,9 +240,22 @@ border: 1px solid lightgray; */
   :nth-child(2) {
     padding: 0 2rem;
   }
-  p {
-    padding: 4rem 2rem;
+  :nth-child(3) {
+    font-weight: bold;
   }
+  p {
+    padding: 2rem 2rem;
+  }
+}
+.enterprise_section{
+    border: 1px solid lightgray;
+    h3{
+        margin-top: 2rem;
+    }
+    h4{
+        border-bottom: 1px solid lightgray;
+    }
+    
 }
 
 /* #region endPRICE */
@@ -280,5 +300,24 @@ border: 1px solid lightgray; */
 /* #endregion PARTNER */
 
 .card_switch_tools>img{
-    
+    width: 100%;
 }
+
+
+.before_footer{
+    width: 60%;
+    h2{
+        font-size: 3rem;
+        padding: 2rem 0;
+        margin-top: 10rem;
+    }
+    a{
+        padding: 3rem 0;
+
+    }
+}
+
+
+/* region FOOTER */
+
+/* endregion FOOTER */
