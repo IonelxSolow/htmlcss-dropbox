@@ -14,7 +14,6 @@
 
 .d-flex{
     display: flex;
-   
 }
 
 :root{
@@ -34,6 +33,10 @@ hr{
 #body_section{
     max-width: 70%;
     margin: auto;
+    min-width: 1200px;
+    .container_row{
+        max-width: 1200px;
+    }
 }
 .text_center{
     text-align: center;
@@ -59,6 +62,12 @@ padding-left: 2rem;
 #body_section > :first-child{
     padding-top: 3rem;
     font-size: 2rem;
+}
+.card{
+ border: 1px solid lightgray;
+ padding: 1rem;
+    margin: 0 1rem;
+    background-color: green;
 }
 /* #endregion /COMMON */
 /* #region HEADER */
@@ -178,12 +187,17 @@ header{
 
 .card_price_professional, .card_price_advanced, .card_price_enterprise, .card_enterprise_info{
 background-color: orange;
-/* margin: 10px; */
 
-border: 1px solid lightgray;
-h4{
+/* margin: 10px; */
+/* 
+border: 1px solid lightgray; */
+/* h4{
     border-bottom: 1px solid lightgray;
+} */
 }
+.card_price_professional{
+    flex-direction: column;
+
 }
 .container_row{
     flex-wrap: wrap;
@@ -192,7 +206,8 @@ h4{
 .card_enterprise_info{
     position: relative;
     flex-direction: column;
-    width: 1188px;
+    
+    width: 1200px;
     margin-top: 50px;
 }
 
