@@ -60,7 +60,7 @@ label:nth-child(2) {
 /* First Title H2 */
 #body_section > :first-child {
   padding-top: 3rem;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 .card {
 
@@ -71,6 +71,22 @@ label:nth-child(2) {
   >img{
     width: 100%;
   }
+  
+  .btn_prova_free{
+    text-align: center;
+  }
+  
+  .mini_line_lightgray{
+    
+      background-color: lightgray;
+    
+  }
+  ul{
+    list-style: none;
+  }
+}
+.card_height{
+  height: 900px;
 }
 .no_border{
     border: none;
@@ -129,16 +145,20 @@ header {
     /*  margine negativo */
     /* background-color: yellow; */
     .row {
+      
       position: relative;
       padding: 5px 0;
       margin: 0 -0.3rem;
       /*  background-color: lightcoral; */
       .title_h1 {
+        border: none;
         font-size: 50px;
         padding: 5px;
         padding-bottom: 2rem;
+        
       }
       .parag_card {
+        border: none;
         height: 400px;
         width: 25%;
         line-height: 1.25rem;
@@ -172,6 +192,7 @@ header {
         /* background-color: lightgray; */
       }
       .jumbo_image {
+        border: none;
         position: absolute;
         right: 0;
         bottom: -5.5rem;
@@ -207,7 +228,9 @@ border: 1px solid lightgray; */
 }*/
 .card_price_professional, .card_switch_tools{
   flex-direction: column;
+  
 }
+
 .container_row {
   flex-wrap: wrap;
   /* background-color: violet; */
@@ -328,8 +351,8 @@ footer{
     
 }
 .footer_container{
-    background-color: #0161fe;
-    width: 80%;
+    /* background-color: #0161fe; */
+    width: 70%;
     margin: auto;
 
 }
@@ -352,6 +375,7 @@ footer{
         }
     }
 }
+
 .mini_line{
     margin-top: 5rem;
     width: 5rem;
